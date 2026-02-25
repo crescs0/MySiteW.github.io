@@ -1,0 +1,204 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0a0c0f;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: white;
+}
+
+/* НАВИГАЦИЯ */
+.nav {
+    background: #1a1e24;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: 1px solid #2c333a;
+}
+
+.nav-center {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #8ab4f8;
+    font-weight: bold;
+}
+
+.menu a {
+    color: #ccc;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+/* БЛОКИ */
+.block {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: #0a0c0f;
+}
+
+.block-center {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 100%;
+}
+
+/* ТЕКСТ */
+h1 {
+    font-size: 56px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #8ab4f8;
+}
+
+.gray {
+    color: #aaa;
+}
+
+.small {
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* ОБО МНЕ */
+.about-row {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.photo-box {
+    flex: 1;
+}
+
+.about-text {
+    flex: 2;
+}
+
+.about-text p {
+    max-width: 600px;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #ccc;
+}
+
+.edu {
+    background: #1a1e24;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+/* КАРТОЧКИ */
+.card-row {
+    display: flex;
+    gap: 30px;
+}
+
+.card {
+    background: #1a1e24;
+    padding: 30px;
+    border-radius: 20px;
+    flex: 1;
+    border: 1px solid #2c333a;
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+/* КОНТАКТЫ */
+.contact-list {
+    background: #1a1e24;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #2c333a;
+}
+
+.contact-list p {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.link-row {
+    display: flex;
+    gap: 15px;
+}
+
+.link {
+    background: #8ab4f8;
+    color: black;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.link-gray {
+    background: transparent;
+    border: 2px solid #8ab4f8;
+    color: #8ab4f8;
+}
+
+/* ПОДВАЛ */
+.footer {
+    padding: 50px 0;
+    background: #1a1e24;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+/* ТЕЛЕФОН */
+@media (max-width: 800px) {
+    .nav-center {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu a {
+        margin: 0 10px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .about-row {
+        flex-direction: column;
+    }
+
+    .card-row {
+        flex-direction: column;
+    }
+
+    .photo-box {
+        width: 100%;
+        max-width: 300px;
+    }
+}
